@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Commerce Product Catalog</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background:#f4f4f4;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+.product{
+    display:inline-block;
+    background:white;
+    padding:15px;
+    margin:10px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+</style>
+</head>
+<body>
+
+<h1>E-Commerce Product Catalog</h1>
+
+<div class="container">
+    <div class="product">
+        <h3>Laptop</h3>
+        <p>Price: ₹50000</p>
+        <button onclick="buy('Laptop')">Buy Now</button>
+    </div>
+
+    <div class="product">
+        <h3>Mobile</h3>
+        <p>Price: ₹20000</p>
+        <button onclick="buy('Mobile')">Buy Now</button>
+    </div>
+
+    <div class="product">
+        <h3>Headphones</h3>
+        <p>Price: ₹2000</p>
+        <button onclick="buy('Headphones')">Buy Now</button>
+    </div>
+</div>
+
+<script>
+function buy(product){
+    alert(product + " added successfully!");
+}
+</script>
+
+</body>
+</html>
